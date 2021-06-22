@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementing Float Properties</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,400;1,600&family=Roboto:ital,wght@0,300;0,400;1,400;1,500&display=swap');
+       /* Styling the four Chat windows*/
+       .box1 , .box2 ,.box3, .box4{
+           background-color:rgb(117, 191, 216);
+           width:90%;
+           height:100px;
+           padding:10px;
+           margin-left: 75px;
+           border-radius: 10px;
+           text-align: center;
+           margin-bottom: 10px;
+       }
+       /* Styling the bot and user's images*/
+       img{
+           width:100px;
+           height:100px;
+           margin:auto;
+       }
+       /* floating the Bot image towards left*/
+       .image1 , .image3{
+           float:left;
+       }
+       /* floating the user's image towards right*/
+       .image2 , .image4{
+           float:right;
+       }
+       /* Styling the text within paragraph tag*/
+       p{
+           font-size: 40px;
+           font-style: italic;
+           font-family: "Nunito", sans-serif;
+           font-weight: 600;
+           color:whitesmoke;
+           margin-bottom: 10px;
+       }
+       /* Styling the text for bot image towards left*/
+       .img1{
+           text-align: left;
+       }
+       /* Styling the text for user's image towards right*/
+       .img2{
+           text-align: right;
+       }
+    </style>
+</head>
+<body>
+    <div class="set">
+        <!-- div which contain four chat windows-->
+        <div class="box1">
+            <!-- div for 1st chat window-->
+            <div class="image1">
+                <!-- div for bot image-->
+                <img src="bot.png" alt="Bot Image">
+            </div>
+            <p class="img1">Hey..!! I can help you order Food. What would you like to order?</p>
+        </div>
+        <div class="box2">
+            <!-- div for 2nd chat window-->
+            <div class="image2">
+                <!-- div for user image-->
+                <img src="user.png" alt="User's Image">
+            </div>
+            <p class="img2">Okay. I would like to order  a burger and  french fries.</p>
+        </div>
+        <div class="box3">
+            <!-- div for 3rd chat window-->
+            <div class="image1">
+                <!-- div for bot image-->
+                <img src="bot.png" alt="Bot Image">
+            </div>
+            <p class="img1">So one burger and french fries. Anything else?</p>
+        </div>
+        <div class="box4">
+            <!-- div for 4th chat window-->
+            <div class="image2">
+                <!-- div for user image-->
+                <img src="user.png" alt="User's Image">
+            </div>
+            <p class="img2">No , thank you!! Place my order.</p>
+        </div>
+    </div>
+</body>
+</html>
