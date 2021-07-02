@@ -4,8 +4,164 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox-1 Challenge</title>
+    <style>
+        body{
+            margin:0;
+            padding:8px;
+        }
+        .container-1{
+            display:flex;
+            align-content: space-between;
+            height:250px;
+        }
+        .container-2{
+            display:flex;
+            align-content: space-between;
+            height:70px;
+        }
+        .container-3{
+            display:flex;
+            align-content: space-between;
+            height:60px;
+        }
+        .flexbox{
+            font-size: 20px;
+            width:400px;
+            height:220px;
+            margin:5px;
+            padding:2px;
+            background-color: lightsalmon;
+            border:2px solid white;
+            border-radius: 5px;
+            flex:1;
+            color:whitesmoke;
+        }
+        .flex-item{
+            width:25%;
+            margin:3px;
+            height:50px;
+            background-color: lightsalmon;
+            border:2px solid white;
+            border-radius: 5px;
+            color:whitesmoke;
+            font-size: 20px;
+            padding: 5px;
+        }
+        .items{
+            font-size: 20px;
+            width:20%;
+            margin: 3px;
+            height:50px;
+            background-color: lightsalmon;
+            border:2px solid white;
+            border-radius: 5px;
+            color:whitesmoke;
+            padding:5px;
+        }
+        #flex-1{
+            display:flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding:5px;
+        }
+        #final{
+            padding:0;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .flex-list11{
+            display:flex;
+            
+            align-content:space-evenly;
+            height:35px;
+            width:100%;
+            flex:1;
+        }
+        .flex-list22{
+            display:flex;
+            align-content:space-evenly;
+            height:35px;
+            width:100%;
+            flex:1;
+        }
+        .flex-list33{
+            display:flex;
+            align-content:space-evenly;
+            height:35px;
+            width:100%;
+            flex:1;
+        }
+        .item1{
+            border: 2px solid white;
+            border-radius: 3px;
+            background-color: rgb(247, 219, 186);
+            width:40%;
+            margin: 5px;
+            color:white;
+        }
+        .item2{
+            border: 2px solid white;
+            border-radius: 3px;
+            background-color: rgb(248, 227, 201);
+            width:30%;
+            margin: 5px;
+            color:white;
+            flex:1;
+        }
+        .item3{
+            border: 2px solid white;
+            border-radius: 3px;
+            background-color: rgb(247, 224, 197);
+            width:25%;
+            margin: 5px;
+            color:white;
+            flex:1;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="container-1">
+        <div class="flexbox" id="flex1">1
+        <div id="final">
+         <div class="flex-list11">
+            <div class="item1">1</div>
+            <div class="item1">2</div>
+            <div class="item1">3</div>
+         </div>
+        <div class="flex-list22">
+            <div class="item2">1</div>
+            <div class="item2">2</div>
+            <div class="item2">3</div>
+            <div class="item2">4</div>
+        </div>
+        <div class="flex-list33">
+            <div class="item3">1</div>
+            <div class="item3">2</div>
+            <div class="item3">3</div>
+            <div class="item3">4</div>
+            <div class="item3">5</div>
+        </div>
+        </div>
+        </div>
+        <div class="flexbox" id="flex-2">2</div>
+        <div class="flexbox" id="flex-3">3</div>
+        </div>
+        <div class="container-2">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        </div>
+        <div class="container-3">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        </div>
+    </div>
 </body>
 </html>
